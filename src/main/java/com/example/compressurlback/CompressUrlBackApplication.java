@@ -8,6 +8,6 @@ public class CompressUrlBackApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CompressUrlBackApplication.class, args);
-        System.out.println("Hello World");
+        System.out.println("Hello World For Compression");
     }
 }
