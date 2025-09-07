@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CompressUrlBackApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CompressUrlBackApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(CompressUrlBackApplication.class, args);
+        System.out.println("Hello World");
+    }
 }
