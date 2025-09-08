@@ -15,7 +15,7 @@ public class RedirectController {
 
     @PostMapping("/shorten")
     public String shortenUrl(@RequestParam String url) {
-        return urlService.compressUrl(url);
+        return urlService.createShortUrl(url);
     }
 
 }
