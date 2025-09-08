@@ -31,7 +31,7 @@ public class UrlService {
 
                 // ✅ Check DB
                 if (!urlMappingRepository.existsById(shortCode)) {
-//                    urlMappingRepository.save(new UrlMapping(shortCode, longUrl, LocalDateTime.now(), null));
+                    urlMappingRepository.save(new UrlMapping(shortCode, longUrl, LocalDateTime.now(), null));
                     return shortCode;
                 }
 
@@ -48,7 +48,7 @@ public class UrlService {
                 fallbackCode = base62.substring(0, 6) + new Random().nextInt(62);
             } while (urlMappingRepository.existsById(fallbackCode));
 
-//            urlMappingRepository.save(new UrlMapping(fallbackCode, longUrl, LocalDateTime.now(), null));
+            urlMappingRepository.save(new UrlMapping(fallbackCode, longUrl, LocalDateTime.now(), null));
             return fallbackCode;
 
         } catch (NoSuchAlgorithmException e) {
